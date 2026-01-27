@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js Assignment</title>
+  <link rel="stylesheet" href="uberapp.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="icon" href="1730746869006.jpg" type="image/jpg" />
+</head>
+
+<body id="all">
+  <nav id="mainNavbar" class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+    <div class="container-fluid mx-5">
+      <a class="navbar-brand" href="#">
+       <a href="accomodation.html"> <img src="logo.jpeg" alt="logo" width="50" class="navbar-icon"></a>
+        Javascript
+      </a>
+
+      <!-- Mobile Menu Toggler -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Desktop Links -->
+      <div class="collapse navbar-collapse d-lg-flex justify-content-center ms-auto align-items-center"
+        id="navbarSupportedContent">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+              role="button">Intro to Javascript</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="dropdown-item" href="history.html">History of Javascript</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="variable.html">Variables</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="index.html">Home</a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+              role="button">Control Flow & Logic</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="dropdown-item" href="#">History of Javascript</a></li> -->
+              <!-- <li class="nav-item"><a class="dropdown-item" href="day5.html">Age & Grade Checker</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="day12.html">Loops</a></li>
+            </ul>
+          </li> -->
+          <li class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+              role="button">Calculators</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="dropdown-item" href="simplecal.html">Simple Calculator-1</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="invest.html"> Investment calculator
+                                    Calculator</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="loancal.html">Loan-Calculaor</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+              role="button">Projects</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="dropdown-item" href="#">Uber-app</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="accomodation.html">Hotel-App</a></li>
+              <!-- <li class="nav-item"><a class="dropdown-item" href="To-dolist.html">To-do List App</a></li> -->
+            </ul>
+          </li>
+          <!-- <li class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+              role="button">Others</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="dropdown-item" href="day14.html">Form-Validations</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="colorGenerator.html">Interactive Generator</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="destructuring.html">Array-Destructuring-Task</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="day11.html">Guess My-Number-Game</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="countDown.html">CountDown</a></li>
+            </ul>
+          </li> -->
+          <!-- Other nav items -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas for Mobile -->
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+            role="button">Intro to Javascript</a>
+          <ul class="dropdown-menu">
+            <li class="nav-item"><a class="dropdown-item" href="index.html">History of Javascript</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="day2.html">Variables</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="day4.html">Greetings</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown me-3">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+            role="button">Control Flow & Logic</a>
+          <ul class="dropdown-menu">
+            <!-- <li class="nav-item"><a class="dropdown-item" href="#">History of Javascript</a></li> -->
+            <li class="nav-item"><a class="dropdown-item" href="day5.html">Age & Grade Checker</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="day12.html">Loops</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown me-3">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+            role="button">Calculators</a>
+          <ul class="dropdown-menu">
+            <li class="nav-item"><a class="dropdown-item" href="day6.html">Simple Calculator-1</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="day8.html"> Retirement & Simple Calculator</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="day9.html">Loan-Calculaor</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown me-3">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+            role="button">Projects</a>
+          <ul class="dropdown-menu">
+            <li class="nav-item"><a class="dropdown-item" href="#">Uber-app</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="hotel.html">Hotel-App</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="To-dolist.html">To-do List App</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown me-3">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+            role="button">Others</a>
+          <ul class="dropdown-menu">
+            <li class="nav-item"><a class="dropdown-item" href="day14.html">Form-Validations</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="colorGenerator.html">Interactive Generator</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="destructuring.html">Array-Destructuring-Task</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="day11.html">Guess My-Number-Game</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="countDown.html">CountDown</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="firstUberdiv" id="firstUberdivJs">
+    <p class="firstUber">Uber</p>
+  </div>
+
+  <div id="formUber" class="container">
+    <div class="allForm">
+      <div style="padding: 0px;">
+        <h1 class="uber"><b>Uber</b></h1>
+        <h3 class="mt-0">Book a ride now</h3>
+        <label for="" class="mb-2"><b>From :</b></label><br>
+        <input type="text" id="from" class="mb-4"><br>
+        <p id="error1"></p>
+        <label for="" class="mb-2"><b>To :</b></label><br>
+        <input type="text" id="to">
+        <p id="error2"></p>
+        <div class="text-center mt-0 startme">
+          <button id="startRide">
+            Start Ride
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="startCount">
+    <div class="confirmALl">
+
+      <p id="confirm" class="text-center"></p>
+      <div class="d-flex justify-content-center gap-4">
+        <button id="back">
+          back
+        </button>
+        <button id="start">
+          start
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="counting">
+    <div class="gap-0 ">
+      <p id="timer" class="text-center mt-0">Ride in progress 00:00:00 you are now moving from your location to your
+        destination</p>
+    </div>
+    <div class="d-flex justify-content-center gap-4">
+      <button id="pause">
+        pause
+      </button>
+      <button id="stop">
+        stop ride
+      </button>
+    </div>
+  </div>
+  <div id="paused">
+    <p id="pausedPara" class="text-white text-center"></p>
+    <div class="d-flex justify-content-center gap-4">
+      <button id="yes">
+        Yes
+      </button>
+      <button id="no">
+        No
+      </button>
+    </div>
+  </div>
+  <div id="stoppedNo">
+    <div class="p-4" style="margin-top: 80px;">
+      <div class="text-center rideEnded">
+        <h1 id="ridEnded" class="p-2"></h1>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+
+      <div class="container">
+        <div class="d-flex justify-content-between p-1">
+          <h3>Base Fare</h3>
+          <h3 id="baseFare"></h3>
+        </div>
+        <b>
+          <hr style="color: black;">
+        </b>
+        <div class="d-flex justify-content-between p-1">
+          <h3>Time taken</h3>
+          <h3 id="timeTaken"></h3>
+        </div>
+        <hr style="color: black;">
+        <div class="d-flex justify-content-between p-1">
+          <h3>Time fare</h3>
+          <h3 id="timeFare"></h3>
+        </div>
+        <hr style="color: black;">
+        <div class="d-flex justify-content-between p-1">
+          <h3>Inital Total</h3>
+          <h3 id="initalTotal"></h3>
+        </div>
+        <hr style="color: black;">
+        <div class="d-flex justify-content-between p-1">
+          <h3>Tax(10%)</h3>
+          <h3 id="taxPercent"></h3>
+        </div>
+        <hr style="color: black;">
+        <div class="d-flex justify-content-between p-1">
+          <h3>Total Amount</h3>
+          <h3 id="totalAmount"></h3>
+        </div>
+        <hr style="color: black;">
+      </div>
+    </div>
+  </div>
+</body>
+<script src="uberapp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</html>

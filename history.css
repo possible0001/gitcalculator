@@ -1,0 +1,22 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.history-section h1 {
+  color: #007bff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.history-section p {
+  color: #333;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

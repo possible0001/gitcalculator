@@ -1,0 +1,37 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #333;
+  font-weight: 600;
+}
+
+#info {
+  display: none;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+}
+.bu{
+    border: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Welcome{
+    text-align: center  ;
+}

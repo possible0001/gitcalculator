@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <div class="back container">
+        <h1>Calculator</h1>
+        <input id="firstno" type="number" placeholder="Enter first number"><br><br>
+        <span id="symbol" class="logo"></span><br>
+        <input id="secondno" type="number" placeholder="Enter second number"><br>
+        <button onclick="addition()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mut()">x</button>
+        <button onclick="div()">/</button>
+        <h1 id="myresult"></h1>
+    </div> -->
+    <!-- <div class="container ">
+        <h1>Investment Calculator</h1>
+        <input id="inv" type="number" placeholder="Enter first number"><br><br>
+        <span id="symbol" class="logo"></span><br>
+        <select id="">
+            <option value="1">1 Months</option>
+            <option value="2">2 Months</option>
+            <option value="3">3 Months</option>
+            <option value="4">4 Months</option>
+            <option value="5">5 Months</option>
+            <option value="6">6 Months</option>
+            <option value="7">7 Months</option>
+            <option value="8">8 Months</option>
+            <option value="9">9 Months</option>
+            <option value="10">10 Months</option>
+            <option value="11">11 Months</option>
+            <option value="12">12 Months</option>
+        </select>
+        <p><b>Note</b> Our investment rate is 20% intrest</p>
+        <button onclick="addition()">Calculate your investment rate</button>
+        <h1 id="myresult"></h1> -->
+
+    <div class="container ">
+        <div class="row justify-content-md-center">
+            <div class="col-4">
+                <div class="back container">
+                    <h1>Calculator</h1>
+                    <input id="firstno" type="number" placeholder="Enter first number"><br><br>
+                    <span id="symbol" class="logo"></span><br>
+                    <input id="secondno" type="number" placeholder="Enter second number"><br>
+                    <button  class="plus" value="plus">+</button>
+                    <button class="plus" value="sub">-</button>
+                    <button class="plus" value="mut">x</button>
+                    <button class="plus" value="div">/</button>
+                    <h1 id="myresult"></h1>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="container sec">
+                    <h1>Investment Calculator</h1>
+                    <input id="investAmount" type="number" placeholder="Enter first number"><br><br>
+                    <!-- <span id="symbol" class="logo"></span><br> -->
+                    <select id="investYears">
+                        <option value="1">1 Months</option>
+                        <option value="2">2 Months</option>
+                        <option value="3">3 Months</option>
+                        <option value="4">4 Months</option>
+                        <option value="5">5 Months</option>
+                        <option value="6">6 Months</option>
+                        <option value="7">7 Months</option>
+                        <option value="8">8 Months</option>
+                        <option value="9">9 Months</option>
+                        <option value="10">10 Months</option>
+                        <option value="11">11 Months</option>
+                        <option value="12">12 Months</option>
+                    </select>
+                    <p><b>Note</b> Our investment rate is 20% intrest</p>
+                    <button onclick="calculateInvestment()">Calculate your investment rate</button>
+                    <h1 id="investResult"></h1>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-4">
+               <div class="container sec">
+                    <h1>Loan Calculator</h1>
+                    <input id="loanAmount" type="number" placeholder="Enter first number"><br><br>
+                    <!-- <span id="symbol" class="logo"></span><br> -->
+                    <select id="loanYears">
+                        <option value="1">1 year</option>
+                        <option value="2">2 year</option>
+                        <option value="3">3 year</option>
+                        <option value="4">4 year</option>
+                        <option value="5">5 year</option>
+                        <option value="6">6 year</option>
+                        <option value="7">7 year</option>
+                        <option value="8">8 year</option>
+                        <option value="9">9 year</option>
+                        <option value="10">10 year</option>
+                        <option value="11">11 year</option>
+                        <option value="12">12 year</option>
+                    </select>
+                    <p><b>Note</b> Our Loan rate is 25% intrest per year</p>
+                    <button onclick="loan()">Calculate your Loan</button>
+                    <h1 id="loanResult"></h1>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                Variable width content
+            </div>
+            <div class="col-4">
+                3 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col-md-auto">
+                Variable width content
+            </div>
+            <div class="col col-lg-2">
+                3 of 3
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="cal.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+         -->
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input id="password" placeholder="input a password" value="">
+    <p id="character7" style="color: red;">minimum length 7 character </p>
+    <p id="number" style="color: red;">must contain 1 number/simbol</p>
+    <p id="letter" style="color: red;">must contain 1 letter</p> -->
+
+    <!-- <ul id="myli"></ul>
+    <button onclick="add()">add</button> -->
+    <input id="myitem">
+    <ul>
+        <li>water</li>
+        <li>wine</li>
+    </ul>
+    <button onclick="add()">add</button>
+
+
+
+
+
+    <div>
+        <p id="james">Welcome</p>
+        <p id="John">To jsclass</p>
+    </div>
+
+    <ul>
+        <li>fruit
+            <span class="close">&close</span>
+        </li>
+        <li>wire
+            <span class="close">&close</span>
+        </li>
+    </ul>
+
+    <form>
+    <label>Name</label>
+    <input id="name"><br>
+    <label>Username</label>
+    <input id="username"><br>
+    <label>Password</label>
+    <input id="password">
+    <button onclick="createuser()">click</button>
+    </form>
+    <script>
+        fetch("https://countriesnow.space/api/v0.1/countries")
+        .then(response => response.json())
+        .then(data =>{
+            console.log(data);
+        })
+
+
+
+        console.log('start code')
+        setTimeout(function(){
+            console.log('delay a little')
+        },2000)
+        console.log('last execution')
+
+
+        
+        let oldstock ={
+            milo: '8 packs',
+            peakmilk: '12 packs',
+            sugar: '18 packs',
+            indomienoodle: '20 packs'
+            }
+
+        let newstoc ={
+            biscute: '2 park',
+            rice:'1 bag',
+            benz: 'new model'
+        }
+
+        let total={...oldstock, ...newstoc}
+        console.log(total)
+
+
+
+
+
+        function adds(...Numbers){
+          return  Numbers.reduce((a,b)=>a+b,0)
+        }console.log(adds(4,5,6,7,8))
+
+        function createuser({
+            name,
+            username,
+            password
+        }){
+            console.log(name)
+            console.log(username)
+            console.log(password)
+         }//let myname= document.getElementById('name').value;
+        // let myusername= document.getElementById('username').value;
+        // let mypassword= document.getElementById('password').value;
+        createuser({name:`${'basit'}`, username:`${'damiee'}`,password:`${'124'}`})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        let myarray = ['fridge','shoe','car']
+        let[item1, ...rest]=myarray
+        console.log(item1)
+
+        let myself = {
+            name:'Basit',
+            role:'Developer',
+            age:24,
+            black:'true'
+        }
+        let{role, age,}=myself
+        console.log(age)
+
+
+
+
+        let d = document.getElementsByClassName('close')
+        for(let i=0; i<d.length; i++){
+            d[i].onclick=()=>{
+                this.parentNode.style.display='none'
+            }
+        }
+
+
+
+        let k = document.querySelector('#james')
+        k.onclick=
+        function(){
+            this.parentNode.style.background='red'
+        }
+
+
+
+
+
+        function add(){
+            let a = document.createElement('li')
+            // a.innerHTML='rice'
+            let b = document.getElementById('myli').value
+            let c = document.createTextNode('b')
+            a.appendChild(c)
+        }
+    //          function basit(){
+    //     let password = document.getElementById('password').value;
+    //     let character7 = document.querySelectorAll('p')
+    //     let number = document.getElementById('number')
+    //     let letter = document.getElementById('letter')
+
+    //     if(password.length<7){
+    //         character7.style.color='green'
+    //     }
+
+
+    // }
+
+
+    // let date = new Date().getTime()
+    // console.log(date)
+
+    // let to = new Date("Jan 2, 1970 00:00:00 ").getTime()
+    // console.log(to)
+    // let x =0
+
+    // setInterval(function(){
+    //     console.log(x++)     
+    // }, 2000)
+
+    // function sayHi(phase,who){
+    //     console.log(phase,who)
+    // }
+    // setTimeout(sayHi,2000,'Hello', 'John')
+
+
+    // let timeid= setTimeout(function tick(){
+    //     alert('tick')
+    //     timeid= setTimeout(tick,2000)
+    // })
+    // let timeId = setTimeout(function(){
+    //     console.log('tick')
+    // },2000)
+    // function printNumber(from,to){
+    //     let current = from;
+    //     function go(){
+    //         alert(current)
+    //         if(current==to){
+    //             clearInterval(x)
+    //         }
+    //         current++
+    //     }
+    //     go()
+    //     let x = setInterval(go,1000)
+    // }
+    // printNumber(1,10)
+    // let xmas=new Date('December 01,2025 12:35:00').getTime();
+    // function countdown(){
+    //     let currentTime = new Date().getTime()
+    //     let distance= xmas-currentTime;
+    //     console.log(distance)
+    //     if(distance<=0){
+    //         clearInterval(timeId)
+    //         console.log('happy birthday')
+    //     }
+    // }
+    // let timeId = setInterval(countdown,1000)
+
+        // let aboutime = {
+        //     surname:'olaboye',
+        //     firstname: 'Tunji',
+        //     age: 25,
+        //     black: 'true',
+        //     role:'programmer',
+        //     fullname= function (){
+        //         return ${this.surname} ${this.firstname}
+        //     }
+        // } console.log(aboutime.firstname)
+    </script>
+</body>
+</html>

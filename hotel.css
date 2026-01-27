@@ -1,0 +1,380 @@
+.navbar-icon {
+    border-radius: 100%;
+    height: 55px;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-item,
+.dropdown-item{
+    font-weight: 600;
+}
+.firstHotel {
+    font-size: 120px;
+    background-color: rgb(15, 9, 65);
+    border-radius: 20px;
+    padding: 20px;
+    color: yellow;
+    animation: changeScale 2000ms infinite alternate-reverse;
+}
+
+.navbar-icon {
+    border-radius: 100%;
+    height: 55px;
+}
+
+@keyframes changeScale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+#firstHoteldiv {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    color: white;
+}
+
+#all {
+    background-color: rgb(31, 31, 117);
+}
+
+
+#loading1,
+#loading2,
+#loading3,
+#StandardRoom1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#forFreeC {
+    background-color: yellow;
+    padding: 30px 30px;
+    width: 100%;
+    max-width: 300px;
+    color: rgb(15, 9, 65);
+    margin-top: 200px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: capitalize;
+} 
+
+#hotelForm,
+#forFree,
+#StandardRoom,
+#EmeraldRoom,
+#SupremeRoom,
+#PresidentialRoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(15, 9, 65);
+    height: 100vh;
+    width: 100%;
+    max-width: 500px;
+}
+
+#ContinuePresidentialC,
+#ContinueSupremeC,
+#ContinueEmeraldC,
+#ContinueSt,
+#PresidentialRoom,
+#SupremeRoom,
+#forHotel,
+#typeOfAccomodation,
+#typeOfRoom {
+    background-color: rgb(15, 9, 65);
+    height: 100vh;
+    width: 100%;
+    max-width: 500px;
+    text-transform: capitalize;
+}
+
+/* #typeOfAccomodation,
+#typeOfRoom {
+    background-color: rgb(15, 9, 65);
+    height: 100vh;
+    width: 100%;
+    max-width: 500px;
+    text-transform: capitalize;
+} */
+/* .typeOfAccomodationCALl,
+.typeOfRoomCAll{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.continuecontent,
+.Emeraldcontent,
+.Supremecontent,
+.Presidentialcontent,
+.prc,
+.src,
+.erc,
+.strc,
+.fhc,
+.Toa,
+.tor {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+/* .allRoom{
+    margin: auto;
+} */
+.provide {
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    font-weight: 500;
+}
+
+#forHotelContent1 {
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.forHotelContent2,
+.type {
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    text-transform: capitalize;
+    font-weight: 700;
+
+}
+
+#daysNext,
+#daysBack,
+#roomBack,
+#accBack {
+    background-color: yellow;
+    color: rgb(15, 9, 65);
+    font-weight: 800;
+    border: none;
+    padding: 10px 20px;
+}
+
+#forHotelContent3 {
+    background-color: rgb(15, 9, 65);
+    height: auto;
+    border-radius: 5px;
+
+
+}
+
+#myPara {
+    color: rgb(15, 9, 65);
+    font-weight: 700;
+}
+
+#userName {
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    font-weight: 500;
+    color: rgb(15, 9, 65);
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+#dateButton {
+    background-color: yellow;
+    color: rgb(15, 9, 65);
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+}
+
+
+.date {
+    background-color: rgb(15, 9, 65);
+    color: yellow;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 3px 3px rgb(91, 91, 235);
+}
+
+#freeAcc,
+#hotelAcc {
+    background-color: rgb(15, 9, 65);
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 10px;
+    border: none;
+    color: yellow;
+    font-weight: 800;
+    border-radius: 20px;
+}
+
+#hotelAcc {
+    margin-top: 10px;
+}
+
+#lastName,
+#firstName {
+    width: 100%;
+    max-width: 400px;
+    border: 3px solid yellow;
+    border-radius: 20px;
+    background-color: rgb(15, 9, 65);
+    color: yellow;
+    font-weight: 700;
+    padding: 10px 10px;
+    text-transform: capitalize;
+}
+
+#lastName:focus,
+#firstName:focus {
+    outline: none;
+}
+
+#Standard,
+#Supreme,
+#Emerald,
+#Presidential {
+    background-color: rgb(15, 9, 65);
+    color: yellow;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+}
+
+.allRoom {
+    background-color: yellow;
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto;
+    padding: 20px;
+    font-weight: 700;
+}
+
+#userNameRoom {
+    background-color: yellow;
+    color: rgb(15, 9, 65);
+    padding: 10px;
+    font-weight: 700;
+}
+
+.howMany {
+    background-color: yellow;
+    color: rgb(15, 9, 65);
+    width: 100%;
+    max-width: 150px;
+    /* padding: 10px; */
+    font-weight: 700;
+}
+
+.StandardRoom1 {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#cancel,
+#Continue,
+#cancelEmerald,
+#ContinueEmerald,
+#cancelSupreme,
+#continueSupreme,
+#cancelPresidential,
+#continuePresidential {
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    color: rgb(15, 9, 65);
+    font-weight: 700;
+    box-shadow: 0px 0px 3px 3px rgb(238, 228, 85);
+}
+
+#ContinueEmeraldContent,
+#ContinueStContent,
+#ContinueSupremeContent,
+#ContinuePresidentialContent,
+#StandardRoomC,
+#EmeraldRoomC,
+#SupremeRoomC,
+#PresidentialRoomC {
+    color: yellow;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#returnToHome {
+    border-radius: 10px;
+    border: none;
+    background-color: yellow;
+    color: rgb(15, 9, 65);
+    padding: 10px;
+    font-weight: 600;
+}
+
+#loading1,
+#loading2,
+#loading3 {
+    width: 100%;
+    max-width: 300px;
+}
+
+@media (max-width:780px) {
+    .firstHotel {
+        font-size: 20px !important;
+        background-color: rgb(15, 9, 65);
+        border-radius: 10px;
+        padding: 20px;
+        color: yellow;
+        width: 100%;
+        max-width: 200px;
+        animation: changeScale 2000ms infinite alternate-reverse;
+    }
+
+    #ContinuePresidentialContent,
+    #ContinueStContent,
+    #ContinueEmeraldContent,
+    #ContinueSupremeContent {
+        font-size: 20px;
+    }
+
+    #loading1,
+    #loading2,
+    #loading3 {
+        width: 100%;
+        max-width: 300px;
+    }
+}

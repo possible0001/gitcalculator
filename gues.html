@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess</title>
+</head>
+<body>
+    <h4 id="Startguesing">Start Guessing.......</h4>
+    <input id="mygues" placeholder="please enter a number btw 1 and 20" style="width: 300px;">
+    <button id="myguesbtn">Check</button>
+    <h3 id="result"></h3>
+    <h2 id="myscore"></h2>
+    <h1 id="myhighestscore"></h1>
+
+
+    <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        let mygues =document.getElementById("mygues").value;
+        let myguesbtn =document.getElementById("myguesbtn");
+        let result =document.getElementById("result");
+        let myscore = document.getElementById("myscore")
+        let mysecritnumber = Math.trunc((Math.random()*20)+1)
+        console.log(mysecritnumber)
+        let score = 20
+        let highestcore=0
+        
+        function delet(){
+            score =score -4
+            document.getElementById("mygues").value=''
+            document.getElementById("mygues").focus
+            if(score==0){
+                result.innerHTML=`GAME OVER. THE number was ${mysecritnumber}`
+                let body = document.querySelector('body')
+                result.style.color='white'
+                body.style.background='red'
+                document.getElementById("mygues").disabled='disabled'
+            }
+            
+        }
+        
+
+        
+        function guessegine(){
+            let mygues= Number(document.getElementById('mygues').value)
+            if(mygues==''){
+                result.innerHTML='you have to type a number'
+                result.style.color='red'
+                delet()
+            }
+            else if(mygues<1 || mygues>20){
+                result.innerHTML='your number should not more than 20 or less than 1'
+                result.style.color='red'
+                delet()
+            }
+            else if(isNaN(mygues)){
+                result.innerHTML='YOu have to input a number '
+                result.style.color='red'
+                delet()
+            }
+            else if(mygues<mysecritnumber){
+                result.innerHTML='your result is too low'
+                result.style.color='blue'
+                delet()
+            }
+            else if(mygues>mysecritnumber){
+                result.innerHTML='your result is too high'
+                result.style.color='gold'
+                delet()
+            }
+            else{
+                result.innerHTML=`correct the number is ${mysecritnumber}`
+                let body = document.querySelector('body')
+                myscore.innerHTML=`You got ${score}`
+                body.style.color='white'
+                body.style.background='green'
+            }
+            if(score>highestcore){
+                                     
+            }
+        }
+        myguesbtn.addEventListener('click',guessegine)
+
+        let a = prompt(`what is your name`)
+        let username= a && `visitor`
+        console.log(`welcome ${username}`)
+
+
+
+        let r=0;
+        let name = r ?? `guest`;
+        console.log(name);
+        let namee = r || `guest`;
+        console.log(namee  )
+    </script>
+</body>
+</html>
