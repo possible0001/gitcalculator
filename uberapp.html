@@ -13,134 +13,142 @@
 </head>
 
 <body id="all">
-  <nav id="mainNavbar" class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
-    <div class="container-fluid mx-5">
-      <a class="navbar-brand" href="#">
-       <a href="accomodation.html"> <img src="logo.jpeg" alt="logo" width="50" class="navbar-icon"></a>
+   <nav id="mainNavbar" class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container-fluid mx-5">
+           <a href="index.html"> <img src="logo.jpeg" alt="logo" width="50" class="navbar-icon"></a>
         Javascript
       </a>
+            <!-- Mobile Menu Toggler -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <!-- Mobile Menu Toggler -->
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Desktop Links -->
-      <div class="collapse navbar-collapse d-lg-flex justify-content-center ms-auto align-items-center"
-        id="navbarSupportedContent">
-        <ul class="navbar-nav flex-row">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
-              role="button">Intro to Javascript</a>
-            <ul class="dropdown-menu">
-              <li class="nav-item"><a class="dropdown-item" href="history.html">History of Javascript</a></li>
-              <li class="nav-item"><a class="dropdown-item" href="variable.html">Variables</a></li>
-              <li class="nav-item"><a class="dropdown-item" href="index.html">Home</a></li>
-            </ul>
-          </li>
-          <!-- <li class="nav-item dropdown me-3">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
-              role="button">Control Flow & Logic</a>
-            <ul class="dropdown-menu">
-              <li class="nav-item"><a class="dropdown-item" href="#">History of Javascript</a></li> -->
-              <!-- <li class="nav-item"><a class="dropdown-item" href="day5.html">Age & Grade Checker</a></li>
-              <li class="nav-item"><a class="dropdown-item" href="day12.html">Loops</a></li>
-            </ul>
-          </li> -->
-          <li class="nav-item dropdown me-3">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
-              role="button">Calculators</a>
-            <ul class="dropdown-menu">
-              <li class="nav-item"><a class="dropdown-item" href="simplecal.html">Simple Calculator-1</a></li>
-              <li class="nav-item"><a class="dropdown-item" href="invest.html"> Investment calculator
+            <!-- Desktop Links -->
+            <div class="collapse navbar-collapse d-lg-flex justify-content-center ms-auto align-items-center"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                            role="button">Intro to Javascript</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="history.html">History of Javascript</a>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="variable.html">Variables</a></li>
+                            <!-- <li class="nav-item"><a class="dropdown-item" href="day4.html">Greetings</a></li> -->
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                            role="button">Control Flow & Logic</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="#">History of Javascript</a></li> -->
+                            <!-- <li class="nav-item"><a class="dropdown-item" href="day5.html">Age & Grade Checker</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="day12.html">Loops</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                            role="button">Calculators</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="calculator.html">Simple Calculator-1</a></li>
+                            <!-- <li class="nav-item"><a class="dropdown-item" href="invest.html"> Investment calculator
                                     Calculator</a></li>
-              <li class="nav-item"><a class="dropdown-item" href="loancal.html">Loan-Calculaor</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown me-3">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
-              role="button">Projects</a>
-            <ul class="dropdown-menu">
-              <li class="nav-item"><a class="dropdown-item" href="#">Uber-app</a></li>
-              <li class="nav-item"><a class="dropdown-item" href="accomodation.html">Hotel-App</a></li>
-              <!-- <li class="nav-item"><a class="dropdown-item" href="To-dolist.html">To-do List App</a></li> -->
-            </ul>
-          </li>
-          <!-- <li class="nav-item dropdown me-3">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
-              role="button">Others</a>
-            <ul class="dropdown-menu">
-              <li class="nav-item"><a class="dropdown-item" href="day14.html">Form-Validations</a></li>
-              <li class="nav-item"><a class="dropdown-item" href="colorGenerator.html">Interactive Generator</a></li>
-              <li class="nav-item"><a class="dropdown-item" href="destructuring.html">Array-Destructuring-Task</a></li>
-              <li class="nav-item"><a class="dropdown-item" href="day11.html">Guess My-Number-Game</a></li>
-              <li class="nav-item"><a class="dropdown-item" href="countDown.html">CountDown</a></li>
-            </ul>
-          </li> -->
-          <!-- Other nav items -->
-        </ul>
-      </div>
-    </div>
-  </nav>
+                            <li class="nav-item"><a class="dropdown-item" href="loancal.html">Loan-Calculaor</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                            role="button">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="uberapp.html">Uber-app</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Hotel-App</a></li>
+                            <!-- <li class="nav-item"><a class="dropdown-item" href="To-dolist.html">To-do List App</a></li> -->
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                            role="button">Others</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="day14.html">Form-Validations</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="colorGenerator.html">Interactive
+                                    Generator</a></li>
+                            <li class="nav-item"><a class="dropdown-item"
+                                    href="destructuring.html">Array-Destructuring-Task</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="day11.html">Guess
+                                    My-Number-Game</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="countDown.html">CountDown</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Offcanvas for Mobile -->
-  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mobileMenu">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title">Menu</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    <!-- Offcanvas for Mobile -->
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                        role="button">Intro to Javascript</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="dropdown-item" href="history.html">History of Javascript</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="variable.html">Variables</a></li>
+                        <!-- <li class="nav-item"><a class="dropdown-item" href="day4.html">Greetings</a></li> -->
+                    </ul>
+                </li>
+                <!-- <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                        role="button">Control Flow & Logic</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="dropdown-item" href="history.html">History of Javascript</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="day5.html">Age & Grade Checker</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="day12.html">Loops</a></li>
+                    </ul>
+                </li> -->
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                        role="button">Calculators</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="dropdown-item" href="calculator.html">Simple Calculator-1</a></li>
+                        <!-- <li class="nav-item"><a class="dropdown-item" href="invest.html"> Investment
+                                Calculator</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="loancal.html">Loan-Calculaor</a></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                        role="button">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="dropdown-item" href="uberapp.html">Uber-app</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="accomodation.html">Hotel-App</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="gues.html">Guess My Number</a></li>
+                        <!-- <li class="nav-item"><a class="dropdown-item" href="To-dolist.html">To-do List App</a></li> -->
+                    </ul>
+                </li>
+                <!-- <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                        role="button">Others</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="dropdown-item" href="day14.html">Form-Validations</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="colorGenerator.html">Interactive
+                                Generator</a></li>
+                        <li class="nav-item"><a class="dropdown-item"
+                                href="destructuring.html">Array-Destructuring-Task</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="day11.html">Guess My-Number-Game</a>
+                        </li>
+                        <li class="nav-item"><a class="dropdown-item" href="countDown.html">CountDown</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
     </div>
-    <div class="offcanvas-body">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
-            role="button">Intro to Javascript</a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="dropdown-item" href="index.html">History of Javascript</a></li>
-            <li class="nav-item"><a class="dropdown-item" href="day2.html">Variables</a></li>
-            <li class="nav-item"><a class="dropdown-item" href="day4.html">Greetings</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown me-3">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
-            role="button">Control Flow & Logic</a>
-          <ul class="dropdown-menu">
-            <!-- <li class="nav-item"><a class="dropdown-item" href="#">History of Javascript</a></li> -->
-            <li class="nav-item"><a class="dropdown-item" href="day5.html">Age & Grade Checker</a></li>
-            <li class="nav-item"><a class="dropdown-item" href="day12.html">Loops</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown me-3">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
-            role="button">Calculators</a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="dropdown-item" href="day6.html">Simple Calculator-1</a></li>
-            <li class="nav-item"><a class="dropdown-item" href="day8.html"> Retirement & Simple Calculator</a></li>
-            <li class="nav-item"><a class="dropdown-item" href="day9.html">Loan-Calculaor</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown me-3">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
-            role="button">Projects</a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="dropdown-item" href="#">Uber-app</a></li>
-            <li class="nav-item"><a class="dropdown-item" href="hotel.html">Hotel-App</a></li>
-            <li class="nav-item"><a class="dropdown-item" href="To-dolist.html">To-do List App</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown me-3">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
-            role="button">Others</a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="dropdown-item" href="day14.html">Form-Validations</a></li>
-            <li class="nav-item"><a class="dropdown-item" href="colorGenerator.html">Interactive Generator</a></li>
-            <li class="nav-item"><a class="dropdown-item" href="destructuring.html">Array-Destructuring-Task</a></li>
-            <li class="nav-item"><a class="dropdown-item" href="day11.html">Guess My-Number-Game</a></li>
-            <li class="nav-item"><a class="dropdown-item" href="countDown.html">CountDown</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
+
   <div class="firstUberdiv" id="firstUberdivJs">
     <p class="firstUber">Uber</p>
   </div>

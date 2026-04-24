@@ -4,66 +4,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calculator</title>
     <link rel="stylesheet" href="stle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" href="1730746869006.jpg" type="image/jpg" />
 </head>
 
 <body>
-    <!-- <div class="back container">
-        <h1>Calculator</h1>
-        <input id="firstno" type="number" placeholder="Enter first number"><br><br>
-        <span id="symbol" class="logo"></span><br>
-        <input id="secondno" type="number" placeholder="Enter second number"><br>
-        <button onclick="addition()">+</button>
-        <button onclick="sub()">-</button>
-        <button onclick="mut()">x</button>
-        <button onclick="div()">/</button>
-        <h1 id="myresult"></h1>
-    </div> -->
-    <!-- <div class="container ">
-        <h1>Investment Calculator</h1>
-        <input id="inv" type="number" placeholder="Enter first number"><br><br>
-        <span id="symbol" class="logo"></span><br>
-        <select id="">
-            <option value="1">1 Months</option>
-            <option value="2">2 Months</option>
-            <option value="3">3 Months</option>
-            <option value="4">4 Months</option>
-            <option value="5">5 Months</option>
-            <option value="6">6 Months</option>
-            <option value="7">7 Months</option>
-            <option value="8">8 Months</option>
-            <option value="9">9 Months</option>
-            <option value="10">10 Months</option>
-            <option value="11">11 Months</option>
-            <option value="12">12 Months</option>
-        </select>
-        <p><b>Note</b> Our investment rate is 20% intrest</p>
-        <button onclick="addition()">Calculate your investment rate</button>
-        <h1 id="myresult"></h1> -->
+      <nav id="mainNavbar" class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container-fluid mx-5">
+           <a href="index.html"> <img src="logo.jpeg" alt="logo" width="50" class="navbar-icon"></a>
+        Javascript
+      </a>
+            <!-- Mobile Menu Toggler -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="container ">
+            <!-- Desktop Links -->
+            <div class="collapse navbar-collapse d-lg-flex justify-content-center ms-auto align-items-center"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                            role="button">Intro to Javascript</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="history.html">History of Javascript</a>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="variable.html">Variables</a></li>
+                            <!-- <li class="nav-item"><a class="dropdown-item" href="day4.html">Greetings</a></li> -->
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                            role="button">Control Flow & Logic</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="#">History of Javascript</a></li> -->
+                            <!-- <li class="nav-item"><a class="dropdown-item" href="day5.html">Age & Grade Checker</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="day12.html">Loops</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                            role="button">Calculators</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="calculator.html">Simple Calculator-1</a></li>
+                            <!-- <li class="nav-item"><a class="dropdown-item" href="invest.html"> Investment calculator
+                                    Calculator</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="loancal.html">Loan-Calculaor</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                            role="button">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="uberapp.html">Uber-app</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Hotel-App</a></li>
+                            <!-- <li class="nav-item"><a class="dropdown-item" href="To-dolist.html">To-do List App</a></li> -->
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                            role="button">Others</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="day14.html">Form-Validations</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="colorGenerator.html">Interactive
+                                    Generator</a></li>
+                            <li class="nav-item"><a class="dropdown-item"
+                                    href="destructuring.html">Array-Destructuring-Task</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="day11.html">Guess
+                                    My-Number-Game</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="countDown.html">CountDown</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas for Mobile -->
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                        role="button">Intro to Javascript</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="dropdown-item" href="history.html">History of Javascript</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="variable.html">Variables</a></li>
+                        <!-- <li class="nav-item"><a class="dropdown-item" href="day4.html">Greetings</a></li> -->
+                    </ul>
+                </li>
+                <!-- <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                        role="button">Control Flow & Logic</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="dropdown-item" href="history.html">History of Javascript</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="day5.html">Age & Grade Checker</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="day12.html">Loops</a></li>
+                    </ul>
+                </li> -->
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                        role="button">Calculators</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="dropdown-item" href="calculator.html">Simple Calculator-1</a></li>
+                        <!-- <li class="nav-item"><a class="dropdown-item" href="invest.html"> Investment
+                                Calculator</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="loancal.html">Loan-Calculaor</a></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                        role="button">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="dropdown-item" href="uberapp.html">Uber-app</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="accomodation.html">Hotel-App</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="gues.html">Guess My Number</a></li>
+                        <!-- <li class="nav-item"><a class="dropdown-item" href="To-dolist.html">To-do List App</a></li> -->
+                    </ul>
+                </li>
+                <!-- <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdown"
+                        role="button">Others</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="dropdown-item" href="day14.html">Form-Validations</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="colorGenerator.html">Interactive
+                                Generator</a></li>
+                        <li class="nav-item"><a class="dropdown-item"
+                                href="destructuring.html">Array-Destructuring-Task</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="day11.html">Guess My-Number-Game</a>
+                        </li>
+                        <li class="nav-item"><a class="dropdown-item" href="countDown.html">CountDown</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container">
         <div class="row justify-content-md-center">
-            <div class="col-4">
+
+            <div class="col-12 col-md-4 mb-3">
                 <div class="back container">
                     <h1>Calculator</h1>
                     <input id="firstno" type="number" placeholder="Enter first number"><br><br>
                     <span id="symbol" class="logo"></span><br>
                     <input id="secondno" type="number" placeholder="Enter second number"><br>
-                    <button  class="plus" value="plus">+</button>
+                    <button class="plus" value="plus">+</button>
                     <button class="plus" value="sub">-</button>
                     <button class="plus" value="mut">x</button>
                     <button class="plus" value="div">/</button>
                     <h1 id="myresult"></h1>
                 </div>
             </div>
-            <div class="col-4">
+
+            <div class="col-12 col-md-4 mb-3">
                 <div class="container sec">
                     <h1>Investment Calculator</h1>
                     <input id="investAmount" type="number" placeholder="Enter first number"><br><br>
-                    <!-- <span id="symbol" class="logo"></span><br> -->
+
                     <select id="investYears">
                         <option value="1">1 Months</option>
                         <option value="2">2 Months</option>
@@ -78,20 +194,26 @@
                         <option value="11">11 Months</option>
                         <option value="12">12 Months</option>
                     </select>
+
                     <p><b>Note</b> Our investment rate is 20% intrest</p>
                     <button onclick="calculateInvestment()">Calculate your investment rate</button>
                     <h1 id="investResult"></h1>
                 </div>
             </div>
+
         </div>
-    </div><br><br>
+    </div>
+
+    <br><br>
+
     <div class="container">
         <div class="row justify-content-md-center">
-            <div class="col-4">
-               <div class="container sec">
+
+            <div class="col-12 col-md-4 mb-3">
+                <div class="container sec">
                     <h1>Loan Calculator</h1>
                     <input id="loanAmount" type="number" placeholder="Enter first number"><br><br>
-                    <!-- <span id="symbol" class="logo"></span><br> -->
+
                     <select id="loanYears">
                         <option value="1">1 year</option>
                         <option value="2">2 year</option>
@@ -106,46 +228,44 @@
                         <option value="11">11 year</option>
                         <option value="12">12 year</option>
                     </select>
+
                     <p><b>Note</b> Our Loan rate is 25% intrest per year</p>
                     <button onclick="loan()">Calculate your Loan</button>
                     <h1 id="loanResult"></h1>
                 </div>
             </div>
+<!-- 
             <div class="col-md-auto">
                 Variable width content
             </div>
-            <div class="col-4">
+
+            <div class="col-12 col-md-4 mb-3">
                 3 of 3
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
+
+        </div> -->
+
+        <!-- <div class="row">
+            <div class="col-12 col-md">
                 1 of 3
             </div>
+
             <div class="col-md-auto">
                 Variable width content
             </div>
-            <div class="col col-lg-2">
+
+            <div class="col-12 col-md-2">
                 3 of 3
             </div>
-        </div>
+        </div> -->
     </div>
 
-
-
-
-
-
-
-
     <script src="cal.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
-         -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
