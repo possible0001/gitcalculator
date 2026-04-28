@@ -70,9 +70,7 @@
         let feedback = document.getElementById("loanResult")
         feedback.textContent =  `You borrowed ₦${loanamount}. 
                                 The interest rate is 25%. 
-                                You will pay ₦${yearinterest} every year as interest. 
-                                In ${duration} years, your total interest is ₦${totalInterest}. 
-                                So you will pay ₦${totalPayment} in total.`;
+                                You will pay ₦${yearinterest} every Month as interest.`;
         feedback.style.fontSize ="14px"
     }
 
